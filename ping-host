@@ -5,16 +5,6 @@
 #
 # Supported operating systems: Linux, Mac, BSDs, Solaris.
 
-
-# Help
-if [ -z "$1" ] || [ "$1" = '-h' ] || [ "$1" = '--help' ]
-then
-  echo 'Usage: ping-host HOST [HOSTN]...' >&2
-  echo 'Retuns 0 if the hosts respond to ping or 1 if any of them fail to respond.' >&2
-  exit
-fi
-
-# What OS are we on?
 OS=$(uname -s)
 
 if [ "$OS" = 'SunOS' ]
